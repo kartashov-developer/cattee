@@ -41,6 +41,8 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'react/function-component-definition': ['off'],
     'arrow-body-style': 'off',
-    'import/extensions': 'off'
+    'import/extensions': 'off',
+    'react/require-default-props': 'off',
+    'react/jsx-props-no-spreading': 'off'
   },
 }

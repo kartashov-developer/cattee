@@ -13,15 +13,24 @@ export function LoginPage() {
         <div className="login-page_form_container">
           <div>
             <Input
-              placeholder='username'
+              placeholder="username"
               value={formValues.username}
+              name="username"
+              onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
+                setFormValues({ ...formValues, username: event.target.value });
+              }}
+              isError
+              helperText="sorry"
             />
-            <div>validation</div>
           </div>
           <div>
             <Input
-              placeholder='123'
+              placeholder="password"
               value={formValues.password}
+              name="password"
+              onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
+                setFormValues({ ...formValues, password: event.target.value });
+              }}
             />
           </div>
           <div>
