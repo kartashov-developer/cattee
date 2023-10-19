@@ -1,0 +1,14 @@
+.login-page_container {
+  height: 100vh;
+}
+
+.login-page_form_container {
+  /* Flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Other */
+  background: #FFFFFF;
+  box-shadow: 0px 4px 50px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
