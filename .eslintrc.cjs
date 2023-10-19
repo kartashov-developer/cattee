@@ -36,7 +36,11 @@ module.exports = {
     ],
     'import/no-unresolved': 'off',
     'import/no-extraneous-dependencies': 'off',
-    "no-unused-vars": ["off"]
-    "@typescript-eslint/no-unused-vars": ["off"],
+    'no-unused-vars': ["off"],
+    '@typescript-eslint/no-unused-vars': ["off"],
+    'import/prefer-default-export': 'off',
+    'react/function-component-definition': ['off'],
+    'arrow-body-style': 'off',
+    'import/extensions': 'off'
   },
 }

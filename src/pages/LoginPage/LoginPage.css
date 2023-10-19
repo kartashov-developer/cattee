@@ -1,14 +1,25 @@
-.login-page_container {
+.login-page {
   height: 100vh;
 }
 
-.login-page_form_container {
+.login-page_container {
   /* Flex */
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   /* Other */
   background: #FFFFFF;
   box-shadow: 0px 4px 50px 2px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
+}
+
+.login-page_form_container {
+  padding: 0 100px;
+}
+
+.login-page_input_container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }

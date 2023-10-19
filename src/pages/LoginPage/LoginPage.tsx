@@ -1,16 +1,28 @@
+import React, { useState } from 'react';
 import './LoginPage.css';
 
-export const LoginPage = () => {
+import { Input } from '../../common/fields';
+
+export function LoginPage() {
+  const [formValues, setFormValues] = useState({ username: '', password: '' });
+
   return (
-    <div className='login-page_container'>
-      <div className='login-page_form_container'>
+    <div className="login-page">
+      <div className="login-page_container">
         <div>header</div>
-        <div>
+        <div className="login-page_form_container">
           <div>
-            <input type='text' />
+            <Input
+              placeholder='username'
+              value={formValues.username}
+            />
+            <div>validation</div>
           </div>
           <div>
-            <input type='text' />
+            <Input
+              placeholder='123'
+              value={formValues.password}
+            />
           </div>
           <div>
             <button>Sign in</button>
@@ -18,5 +30,5 @@ export const LoginPage = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
