@@ -12,15 +12,12 @@ export const Input: React.FC<InputProps> = (
 ) => {
   // isError true ->  className add 'input_error'
   const className = isError
-    ? `${classes.input} ${classes.input_error}`
-    : classes.input;
+    ? `${classes.input} ${classes.input_error}` : classes.input;
 
   return (
     <>
       <input
-        className={`${classes.input} ${isError
-          ? classes.input_error
-          : ''}`}
+        className={`${classes.input} ${isError ? classes.input_error : ''}`}
         {...props}
       />
 

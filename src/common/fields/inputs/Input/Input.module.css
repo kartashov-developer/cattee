@@ -19,10 +19,11 @@
 }
 
 .input_helper_text {
-  font-size: 11px;
+  font-family: "serif";
+  font-size: 12px;
   font-weight: 300;
-  line-height: 14px;
-  padding-left: 10px;
+  line-height: 15px;
+  padding-left: 3px;
   color: #db3939;
 }
 
