@@ -1,0 +1,60 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  /* Flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* Other */
+  background: #FFFFFF;
+  box-shadow: 0px 4px 50px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+
+.container_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 53px;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+  color: #FFFFFF;
+  font-size: 24px;
+  background-color: #CCCCCC;
+}
+
+.container_form {
+  padding: 0 100px;
+  margin-bottom: 100px;
+}
+
+.container_form_input {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-bottom: 30px;
+}
+
+.signup_container {
+  margin-bottom: 15px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #CCCCCC;
+}
+
+.signup_container {
+  margin-bottom: 15px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #CCCCCC;
+}

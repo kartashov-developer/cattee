@@ -1,41 +1,49 @@
 import React, { useState } from 'react';
-import './LoginPage.css';
 
 import { Input } from '../../common/fields';
+import { Button } from '../../common/buttons';
+
+import classes from './LoginPage.module.css';
 
 export function LoginPage() {
   const [formValues, setFormValues] = useState({ username: '', password: '' });
 
   return (
-    <div className="login-page">
-      <div className="login-page_container">
-        <div>header</div>
-        <div className="login-page_form_container">
-          <div>
+    <div className={classes.page}>
+      <div className={classes.container}>
+        <div className={classes.container_header}>CATTEE</div>
+        <div className={classes.container_form}>
+          <div className={classes.container_form_input}>
             <Input
-              placeholder="username"
+              placeholder="Username"
               value={formValues.username}
+              helperText="Problem"
               name="username"
               onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
-                setFormValues({ ...formValues, username: event.target.value });
+                const username = event.target.value;
+                setFormValues({ ...formValues, username });
               }}
               isError
-              helperText="sorry"
             />
-          </div>
-          <div>
             <Input
-              placeholder="password"
+              isError
+              placeholder="Password"
               value={formValues.password}
+              helperText="Problem"
               name="password"
               onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
-                setFormValues({ ...formValues, password: event.target.value });
+                const password = event.target.value;
+                setFormValues({ ...formValues, password });
               }}
             />
           </div>
           <div>
-            <button>Sign in</button>
+            <Button>Sign In</Button>
           </div>
+        </div>
+
+        <div className={classes.signup_container}>
+          Create new account
         </div>
       </div>
     </div>

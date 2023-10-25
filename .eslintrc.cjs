@@ -43,6 +43,7 @@ module.exports = {
     'arrow-body-style': 'off',
     'import/extensions': 'off',
     'react/require-default-props': 'off',
-    'react/jsx-props-no-spreading': 'off'
+    'react/jsx-props-no-spreading': 'off',
+    'import/named': 'off'
   },
 }
