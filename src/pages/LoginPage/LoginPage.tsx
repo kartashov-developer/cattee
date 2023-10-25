@@ -71,6 +71,7 @@ export function LoginPage() {
             <Input
               placeholder="Password"
               value={formValues.password ?? null}
+              type="password"
               onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
                 const password = event.target.value;
                 setFormValues({ ...formValues, password });
