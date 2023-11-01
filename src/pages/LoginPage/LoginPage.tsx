@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import { Input } from '../../common/fields';
-import { Button } from '../../common/buttons';
+import { Input } from '@common/fields';
+import { Button } from '@common/buttons';
 
 import classes from './LoginPage.module.css';
 
@@ -30,7 +30,10 @@ const loginFormValidateSchema = {
   password: validatePassword,
 };
 
-const validateLoginForm = (name: keyof typeof loginFormValidateSchema, value: string) => {
+const validateLoginForm = (
+  name: keyof typeof loginFormValidateSchema,
+  value: string,
+) => {
   return loginFormValidateSchema[name](value);
 };
 
@@ -89,9 +92,7 @@ export function LoginPage() {
           </div>
         </div>
 
-        <div className={classes.signup_container}>
-          Create new account
-        </div>
+        <div className={classes.signup_container}>Create new account</div>
       </div>
     </div>
   );

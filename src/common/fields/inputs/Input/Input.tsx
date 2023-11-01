@@ -7,12 +7,15 @@ interface InputProps extends React.HTMLProps<HTMLInputElement> {
   helperText?: string;
 }
 
-export const Input: React.FC<InputProps> = (
-  { isError = false, helperText, ...props },
-) => {
+export const Input: React.FC<InputProps> = ({
+  isError = false,
+  helperText,
+  ...props
+}) => {
   // isError true ->  className add 'input_error'
   const className = isError
-    ? `${classes.input} ${classes.input_error}` : classes.input;
+    ? `${classes.input} ${classes.input_error}`
+    : classes.input;
 
   return (
     <>
@@ -23,9 +26,7 @@ export const Input: React.FC<InputProps> = (
 
       {/* isError+helperText=true -> show helper_text */}
       {isError && helperText && (
-        <div className={classes.input_helper_text}>
-          {helperText}
-        </div>
+        <div className={classes.input_helper_text}>{helperText}</div>
       )}
     </>
   );
