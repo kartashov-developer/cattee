@@ -1,3 +1,7 @@
+.input_container {
+  position: relative;
+}
+
 .input {
   background-color: rgba(237, 237, 237, 0.5);
   border-radius: 5px;
