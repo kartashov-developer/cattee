@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 import { useNavigate } from 'react-router-dom';
 
-import { Input } from '@common/fields';
+import { Input, PasswordInput } from '@common/fields';
 import { Button } from '@common/buttons';
 
 import classes from './LoginPage.module.css';
@@ -77,10 +77,9 @@ export function LoginPage() {
               })}
             />
             {/* Password Input */}
-            <Input
+            <PasswordInput
               placeholder="Password"
               value={formValues.password ?? null}
-              type="password"
               onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
                 const password = event.target.value;
                 setFormValues({ ...formValues, password });
