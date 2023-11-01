@@ -19,7 +19,8 @@
     "baseUrl": "./src",
     "paths": {
       "@/*": ["src/*"],
-      "@common/*": ["common/*"]
+      "@common/*": ["common/*"],
+      "@pages/*": ["pages/*"]
     }
   },
   "include": ["src"],

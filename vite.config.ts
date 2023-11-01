@@ -7,9 +7,19 @@ import path from 'path';
 export default defineConfig({
   plugins: [react()],
   resolve: {
-    alias: {
-      '/@': path.resolve(__dirname, 'src'),
-      '/@common': path.resolve(__dirname, 'src/common'),
-    },
+    alias: [
+      {
+        find: '@',
+        replacement: path.resolve(__dirname, './src'),
+      },
+      {
+        find: '@common',
+        replacement: path.resolve(__dirname, './src/common/'),
+      },
+      {
+        find: '@pages',
+        replacement: path.resolve(__dirname, './src/pages/'),
+      },
+    ],
   },
 });
