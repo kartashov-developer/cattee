@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+import PasswordShowIcon from '../../../../assets/password-show.svg';
+import PasswordHideIcon from '../../../../assets/password-hide.svg';
+
 import classes from './Input.module.css';
 
 interface InputProps extends React.HTMLProps<HTMLInputElement> {
@@ -34,9 +37,20 @@ export const Input: React.FC<InputProps> = ({
         <div
           className={classes.password_toggle_container}
           onClick={() => setShowPassword(!showPassword)}
-          aria-hidden="true"
         >
-          {showPassword ? 'hide' : 'show'}
+          {showPassword ? (
+            <img
+              className={classes.image_password_container}
+              src={PasswordShowIcon}
+              alt="Hide Password Icon"
+            />
+          ) : (
+            <img
+              className={classes.image_password_container}
+              src={PasswordShowIcon}
+              alt="Show Password Icon"
+            />
+          )}
         </div>
       )}
     </div>

@@ -2,6 +2,24 @@
   position: relative;
 }
 
+.input_container:hover > .input {
+  background: rgba(237, 237, 237, 0.9);
+}
+
+.image_password_container {
+  width: 16px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.password_toggle_container {
+  position: absolute;
+  width: 16px;
+  height: 12px;
+  top: 8px;
+  right: 5px;
+}
+
 .input {
   background-color: rgba(237, 237, 237, 0.5);
   border-radius: 5px;

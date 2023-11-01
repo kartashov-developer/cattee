@@ -55,4 +55,9 @@
   font-size: 12px;
   font-weight: 600;
   color: #CCCCCC;
+  cursor: pointer;
+}
+
+.signup_container:hover {
+  text-decoration: underline;
 }
