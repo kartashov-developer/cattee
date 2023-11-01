@@ -8,8 +8,8 @@ const AuthRoutes = () => {
   return (
     <Routes>
       <Route path="/auth" element={<LoginPage />} />
-      <Route path="/registration" element={<LoginPage />} />
-      <Route path="*" element={<LoginPage />} />
+      <Route path="/registration" element={<RegistrationPage />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 };
