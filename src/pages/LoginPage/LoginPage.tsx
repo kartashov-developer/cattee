@@ -1,4 +1,8 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
+
+import { useNavigate } from 'react-router-dom';
 
 import { Input } from '@common/fields';
 import { Button } from '@common/buttons';
@@ -43,6 +47,8 @@ interface FormErrors {
 }
 
 export function LoginPage() {
+  const navigate = useNavigate();
+
   const [formValues, setFormValues] = useState({ username: '', password: '' });
   const [formErrors, setFormErrors] = useState<FormErrors>({
     username: null,
@@ -92,7 +98,12 @@ export function LoginPage() {
           </div>
         </div>
 
-        <div className={classes.signup_container}>Create new account</div>
+        <div
+          className={classes.signup_container}
+          onClick={() => navigate('/registration')}
+        >
+          Create new account
+        </div>
       </div>
     </div>
   );
